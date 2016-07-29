@@ -1,0 +1,6 @@
+helsinki
+espoo
+turku
+Kuopio
+tampere
+salo
