@@ -1,0 +1,38 @@
+Assignment:
+Create a simple Python script that makes a search for a keyword on a user-given web url. As a result the script should return the 
+time (in milliseconds) it took for the script to finish and whether the keyword was found on the received page (OK/NOK).
+
+The url and the search keyword should be given as command line parameters
+1. parameter: url
+2. parameter: the search keyword
+
+For example, to search http://www.hs.fi/ for the word 'urheilu', the user would give the following command on the command line:
+> python web_search.py http://www.hs.fi/ urheilu
+
+
+Bonus 1:
+Make input validation for the user-given command line parameters. Check at least that the correct number of parameters is given.
+Also, print a user friendly error message that advices the user in the correct usage.
+
+
+Bonus 2:
+Enhance the script to 'ping' the url periodically with a user defined time interval (3. parameter)
+
+
+Bonus 3:
+Modify the script to handle multiple urls on each run. The urls and respective search keywords should be read from a separate config file.
+The format of the config file can be implemented freely.
+
+
+Bonus 4:
+Log the results to a separate log file.
+The log file should contain the following information on each entry:
+1. The current timestamp
+2. The url searched
+3. The search result (OK/NOK)
+4. The time it took to complete the search.
+Think how to represent the information in a readable way even when the data amount grows.
+
+Some tips:
+-Make use of Python's extensive module library. There is no need to reinvent the wheel.
+-https://docs.python.org/2/library/urllib2.html (check your python version to use the correct module)
